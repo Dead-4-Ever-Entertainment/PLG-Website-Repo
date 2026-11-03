@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Features — Purple Lotus Guild</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="images/icon.png">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html" class="logo">
+        <img src="images/icon.png" alt="Purple Lotus Guild">
+        Purple Lotus Guild
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="classes.html">Classes</a></li>
+        <li><a href="world.html">World</a></li>
+        <li><a href="features.html" class="active">Features</a></li>
+        <li><a href="https://codex.purplelotusguild.com" target="_blank" rel="noopener">Codex</a></li>
+        <li><a href="devlog.html">Devlog</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Game Features</h1>
+    <p class="subtitle">What makes Purple Lotus Guild unique.</p>
+
+    <section class="section">
+      <div class="card-grid">
+        <div class="card">
+          <h3>Code as Gameplay</h3>
+          <p>Write real code to control your hero. Movement, sensing enemies, attacking, using items, shopping, and crafting are all done through function calls like <code>hero.attack()</code> or <code>hero.buy("minor_hp_potion")</code>.</p>
+        </div>
+        <div class="card">
+          <h3>Educational Lessons</h3>
+          <p>Structured lessons guide you from printing "Hello" to managing inventory, equipping gear, and advanced combat. Lessons are context-aware and tied to specific scenes (class select, town, wilds).</p>
+        </div>
+        <div class="card">
+          <h3>Crafting & Professions</h3>
+          <p>Alchemy, metalworking, woodworking, textile, leatherworking, and enchanting. Use stations in town and recipes from the game data. Races give profession XP bonuses.</p>
+        </div>
+        <div class="card">
+          <h3>Combat System</h3>
+          <p>Turn-based or code-driven combat with class skills, weapon skills (tiered by level), status effects, and resource management. Face monsters from the bestiary with unique drops.</p>
+        </div>
+        <div class="card">
+          <h3>Equipment & Items</h3>
+          <p>Weapons, armor, rings, necklaces, capes, potions, food, and more. Rarity bands, enchants, and loot tables drive progression. Equip via code.</p>
+        </div>
+        <div class="card">
+          <h3>Save & Progress</h3>
+          <p>Save your game, load previous slots, and continue your campaign.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Example Code</h2>
+      <pre style="background: var(--bg-card); padding: 1rem; border-radius: 8px; overflow-x: auto; border: 1px solid var(--border);">
+# Explore and fight
+if hero.enemy_nearby():
+    hero.attack()
+else:
+    hero.move_right()
+
+# In town
+hero.enter_shop("alchemist")
+hero.buy("minor_hp_potion")
+hero.equip("copper_short_sword")
+hero.rest()
+      </pre>
+      <p style="margin-top: 1rem;">The full API and lessons are available in the <a href="https://codex.purplelotusguild.com" target="_blank" style="color: var(--accent);">Codex</a>.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Dead 4 Ever Entertainment &copy; 2026</p>
+  </footer>
+</body>
+</html>
